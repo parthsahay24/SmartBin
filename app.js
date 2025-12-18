@@ -536,4 +536,12 @@ app.listen(3000,function(){
 
 //this is for checking purpose
 console.log('EMAIL_USER:', emailUser);
+
 console.log('EMAIL_PASS:', emailPass);
+
+
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
